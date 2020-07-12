@@ -1,3 +1,9 @@
-<?php get_header(); ?>
+<?php get_header();
+while (have_posts())
+{
+	the_post();
+?>
 
-<?php get_footer(); 
+<?php
+} 
+get_footer(); ?>
